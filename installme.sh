@@ -8,3 +8,4 @@ sudo cp 1610-088/hostapd.conf /etc/hostapd
 sudo cp hostapd /etc/default/hostapd
 sudo rm -f 1610-088.tgz
 sudo rm -f adafruit_hostapd_14128.zip
+sudo cp sysctl.conf /etc/sysctl.conf
