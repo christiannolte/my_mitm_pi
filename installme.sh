@@ -8,7 +8,10 @@ sudo tar xvfz 1610-088.tgz
 sudo cp 1610-088/hostapd.conf /etc/hostapd
 sudo cp hostapd_conf /etc/default/hostapd
 sudo rm -f 1610-088.tgz
-echo sudo rm -f adafruit_hostapd_14128.zip
+sudo unzip adafruit_hostapd_14128.zip
+sudo cp hostapd /usr/sbin/hostapd
+sudo rm -f adafruit_hostapd_14128.zip
+sudo rm hostapd
 sudo cp sysctl.conf /etc/sysctl.conf
 sudo apt-get install dnsmasq
 sudo cp dnsmasq.conf /etc/dnsmasq.conf
