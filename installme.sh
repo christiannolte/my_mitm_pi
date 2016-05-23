@@ -16,3 +16,7 @@ sudo rm hostapd
 sudo cp sysctl.conf /etc/sysctl.conf
 sudo apt-get install dnsmasq
 sudo cp dnsmasq.conf /etc/dnsmasq.conf
+sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+echo "save Firewall rules"
+sudo apt-get install iptables-persistent
+dpkg-reconfigure iptables-persistent
