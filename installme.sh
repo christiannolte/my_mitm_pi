@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo apt-get update
+sudo apt-get install bridge-utils
 sudo cp interfaces /etc/network/interfaces
 sudo apt-get install hostapd
 sudo wget ftp://ftp.heise.de/pub/ct/listings/1610-088.tgz
